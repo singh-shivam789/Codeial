@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/sign-in.css">
+<div id="container">
+    <div id="heading1">
+        <h1>Sign In</h1>
+    </div>
+    <div id="heading2">
+        <h2>Enter your account details</h2>
+    </div>
+    <div id="sign-in-form">
+
+        <form action="/users/create-session" method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Sign In">
+        </form>
+
+    </div>
+    <div id="forgot-pass">
+        <a href="/users/forgot-password">Forgot Password</a>
+    </div>
+    <div id="google-sign-in">
+        <p>
+            <a href="/users/auth/google">Google Sign In/Sign Up</a>
+        </p>
+    </div>
+</div>

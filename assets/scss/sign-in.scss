@@ -1,0 +1,47 @@
+#container {
+    padding: 3%;
+    #forgot-pass {
+        >a:hover {
+            color: whitesmoke;
+        }
+        >a {
+            transition: 0.3s ease-in-out all;
+            text-decoration: none;
+            color: #1d2d50;
+            font-family: sans-serif;
+            font-size: x-large;
+        }
+    }
+    #google-sign-in {
+        >p {
+            >a:hover {
+                color: whitesmoke;
+            }
+            >a {
+                transition: 0.3s ease-in-out all;
+                text-decoration: none;
+                color: #1d2d50;
+                font-family: sans-serif;
+                font-size: x-large;
+            }
+        }
+    }
+    >a {
+        color: whitesmoke;
+    }
+    color: whitesmoke;
+    background-color: #8d93ab;
+    width: 100%;
+    height: 100%;
+    margin: none;
+    padding-top: 10px;
+    #heading1 {
+        color: #393b44;
+        font-family: sans-serif;
+        font-size: 3rem;
+    }
+    #heading2 {
+        color: #a2d5f2;
+        font-size: large;
+    }
+}

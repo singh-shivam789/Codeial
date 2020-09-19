@@ -1,0 +1,181 @@
+li {
+  color: black; }
+  li .toggle-like-button:hover {
+    background-color: whitesmoke;
+    color: cornflowerblue;
+    padding: 2px;
+    border-radius: 3px; }
+  li .toggle-like-button {
+    position: relative;
+    top: -70px;
+    left: 90px;
+    transition: 0.2s ease-in-out all;
+    color: whitesmoke;
+    font-size: medium;
+    text-decoration: none;
+    font-weight: 600; }
+  li .toggle-like-button-offline {
+    position: relative;
+    top: -90px;
+    left: 90px;
+    color: whitesmoke;
+    font-size: medium;
+    text-decoration: none;
+    font-weight: 600; }
+  li .toggle-comment-like-button-offline {
+    position: relative;
+    top: -25px;
+    left: 5px;
+    color: cornflowerblue;
+    font-size: medium;
+    text-decoration: none;
+    font-weight: 600; }
+  li #post {
+    overflow: hidden;
+    padding: 1%;
+    padding-left: -5%;
+    width: 95%;
+    height: auto;
+    border-bottom: 1px solid whitesmoke;
+    margin-bottom: 1%; }
+  li #name {
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: large;
+    position: relative;
+    left: 90px;
+    top: 10px; }
+  li .post-comments-list > ul {
+    width: 70%; }
+    li .post-comments-list > ul > li {
+      border-radius: 5px;
+      height: 10%;
+      margin-bottom: 1%;
+      border: 1px solid whitesmoke;
+      padding-bottom: 1%;
+      background-color: #d6e0f0; }
+  li #comment-name1 {
+    color: cornflowerblue;
+    font-weight: bolder;
+    font-size: large;
+    position: relative;
+    left: 8%;
+    top: -50px; }
+  li #comment-content1 {
+    overflow-y: scroll;
+    word-break: break-all;
+    display: inline-block;
+    width: 85%;
+    height: 18%;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: gray;
+    margin-left: 18%;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: medium;
+    position: relative;
+    left: -85px;
+    top: 30px; }
+  li .post-comments {
+    width: 97.6%;
+    padding: 1%;
+    box-shadow: 0px 0px 7px 2px #d6e0f0; }
+    li .post-comments > h4 {
+      font-size: 1.78rem;
+      font-weight: 900;
+      color: #393b44; }
+  li #comment-name2 {
+    color: cornflowerblue;
+    font-weight: bolder;
+    font-size: large;
+    position: relative;
+    left: 8%;
+    top: -45px; }
+  li #comment-content2 {
+    overflow-y: scroll;
+    word-break: break-all;
+    display: inline-block;
+    width: 85%;
+    height: 18%;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: gray;
+    margin-left: 18%;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: medium;
+    position: relative;
+    left: -85px;
+    top: 30px; }
+  li #content {
+    overflow-y: scroll;
+    word-break: break-all;
+    display: inline-block;
+    width: 60%;
+    height: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 5px;
+    background-color: #d6e0f0;
+    border: 1px solid whitesmoke;
+    color: cornflowerblue;
+    font-weight: bolder;
+    font-size: large;
+    position: relative;
+    left: -10px;
+    top: 130px; }
+  li .delete-post-button:hover {
+    border-radius: 5px;
+    padding: 3px;
+    background-color: whitesmoke;
+    color: cornflowerblue; }
+  li .delete-post-button {
+    font-size: large;
+    transition: 0.3s all ease-in-out;
+    color: whitesmoke;
+    text-decoration: none; }
+  li .delete-comment-button:hover {
+    border-radius: 5px;
+    padding: 3px;
+    background-color: grey;
+    color: whitesmoke; }
+  li .delete-comment-button {
+    font-size: large;
+    transition: 0.3s all ease-in-out;
+    color: cornflowerblue;
+    text-decoration: none; }
+  li #comment-delete {
+    position: relative;
+    left: 30%;
+    top: 8px; }
+  li #delete {
+    position: relative;
+    left: 25%;
+    top: 32px; }
+  li #comment-user-img-container1 {
+    position: relative;
+    top: -85px;
+    left: 5px;
+    height: 8%;
+    width: 6%; }
+    li #comment-user-img-container1 > img {
+      border: 1px solid grey; }
+  li #comment-user-img-container2 {
+    position: relative;
+    top: -80px;
+    left: 5px;
+    height: 8%;
+    width: 6%; }
+    li #comment-user-img-container2 > img {
+      border: 1px solid grey; }
+  li #post-user-img-container {
+    position: relative;
+    top: -30px;
+    height: 8%;
+    width: 6%; }
+    li #post-user-img-container img {
+      border: 1px solid whitesmoke;
+      border-radius: 50%; }

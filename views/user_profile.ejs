@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="/css/user_profile.css">
+<script defer>
+    function myFunction() {
+        var x = document.getElementById("update-form");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+<div id="profile-img-container">
+    <img style="color: whitesmoke;" src="<%=current_user.avatar%>" alt="&nbsp; Edit Profile to upload an image." width="800" height="850">
+
+</div>
+
+<% if(user.id == current_user.id){%>
+    <aside>
+        <!-- if user matches then show the form -->
+        <div id="update-box">
+            <button onclick="myFunction()" id="editBtn">Edit Profile</button>
+            <div id="update-form">
+                <form action="/users/update/<%= current_user.id %>" enctype="multipart/form-data" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" value="<%= current_user.name %>" required>
+                    <input type="email" name="email" placeholder="Your Email" value="<%= current_user.email %>" required>
+                    <input type="file" name="avatar" id="fileBtn">
+                    <input type="submit" value="Update Profile" id="updateBtn">
+
+                </form>
+
+            </div>
+
+        </div>
+        <!-- else show only the profile info -->
+
+        <div id="details">
+            <p>
+                <%= current_user.name %>
+            </p>
+            <p>
+                <%= current_user.email %>
+            </p>
+        </div>
+    </aside>
+
+
+    <%}else{%>
+        <!-- else show only the profile info -->
+        <aside>
+            <div id="details">
+                <p>
+                    <%= current_user.name %>
+                </p>
+                <p>
+                    <%= current_user.email %>
+                </p>
+            </div>
+        </aside>
+        <%} %>

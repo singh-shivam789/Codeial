@@ -1,0 +1,23 @@
+<footer id="layout-footer">
+    <div>
+        <p>
+            &#169; Codeial. All Rights Reserved
+        </p>
+    </div>
+
+    <div>
+        <nav class="footer-nav">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <!-- Accessing the current signed-in user's profile -->
+                    <% if(locals.user) {%>
+                        <a href="/users/profile/<%= user.id %>">Profile</a>
+                        <%}%>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>

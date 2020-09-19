@@ -1,0 +1,51 @@
+#container {
+  padding: 3%;
+  padding-left: 35%;
+  width: 100%;
+  height: 92%;
+  background-color: #8d93ab; }
+  #container > h1 {
+    margin-top: -1%;
+    margin-left: 5%;
+    color: #393b44;
+    font-family: sans-serif;
+    font-size: 6rem; }
+  #container #form-container {
+    border-radius: 8px;
+    width: 30%;
+    height: 50%;
+    border: 1px solid black;
+    background-color: #d6e0f0; }
+  #container form {
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 5%; }
+    #container form input[type=text],
+    #container form input[type=password],
+    #container form input[type=email] {
+      width: 90%;
+      margin-top: 2%;
+      border: none;
+      padding: 2%;
+      font-size: 1.3rem; }
+    #container form #btn:hover {
+      color: #393b44;
+      background-color: whitesmoke; }
+    #container form #btn {
+      transition: 0.3s all ease-in-out;
+      margin-left: 33%;
+      margin-top: 5%;
+      border: 1px solid whitesmoke;
+      border-radius: 5px;
+      min-width: 8%;
+      padding: 2%;
+      font-size: 1.75rem;
+      background-color: cornflowerblue; }
+  #container p > a:hover {
+    color: whitesmoke; }
+  #container p > a {
+    transition: 0.3s ease-in-out all;
+    text-decoration: none;
+    color: #1d2d50;
+    font-family: sans-serif;
+    font-size: x-large; }

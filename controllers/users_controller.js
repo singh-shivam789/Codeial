@@ -5,7 +5,11 @@ const crypto = require('crypto');
 const passwordMailer = require('../mailers/password_mailer');
 
 module.exports.removeUser = async function(req, res) {
-    return res.redirect('back');
+    User.findById(req.params.id, function(err, user) {
+        user.remove();
+        req.flash('success', 'Account Removed Successfully!');
+        return res.redirect('back');
+    });
 }
 
 module.exports.changePassword = async function(req, res) {

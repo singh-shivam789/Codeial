@@ -21,8 +21,8 @@ const development = {
         port: 587,
         secure: false,
         auth: {
-            user: 'shivamsinghgbpit',
-            pass: 'singh@1234'
+            user: '',
+            pass: ''
         }
     },
     google_client_id: '664462862943-1n226qoiurl0gtanph24edag8cfc8qcr.apps.googleusercontent.com',
@@ -46,8 +46,8 @@ const production = {
         port: 587,
         secure: false,
         auth: {
-            user: process.env.CODEIAL_GMAIL_USERNAME,
-            pass: process.env.CODEIAL_GMAIL_PASSWORD
+             user: '',
+            pass: ''
         }
     },
     google_client_id: process.env.CODEIAL_GOOGLE_CLIENT_ID,

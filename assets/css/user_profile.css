@@ -2,6 +2,7 @@ body {
   background-color: #f1f3f8;
   font-family: sans-serif; }
   body #remove-btn a {
+    text-decoration: none;
     position: relative;
     top: -150px;
     left: 90%;

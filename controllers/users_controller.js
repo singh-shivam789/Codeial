@@ -3,14 +3,9 @@ const path = require('path');
 const fs = require('fs');
 const crypto = require('crypto');
 const passwordMailer = require('../mailers/password_mailer');
-
-module.exports.removeUser = async function(req, res) {
-    User.findById(req.params.id, function(err, user) {
-        user.remove();
-        req.flash('success', 'Account Removed Successfully!');
-        return res.redirect('back');
-    });
-}
+const Post = require('../models/post');
+const Like = require('../models/likes');
+const Comment = require('../models/comment');
 
 module.exports.changePassword = async function(req, res) {
 
@@ -35,8 +30,6 @@ module.exports.changePassword = async function(req, res) {
 module.exports.resetPasswordRedirect = async function(req, res) {
     try {
         let user = await User.findOne({ 'email': req.body.email });
-        // console.log("hello", user);
-        // console.log(req.body);
         passwordMailer.newPassword(user);
         req.flash('success', 'Please check your mail for password reset link.');
         return res.redirect('back');

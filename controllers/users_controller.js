@@ -115,7 +115,7 @@ module.exports.update = async function(req, res) {
 // render the sign up page
 module.exports.signUp = function(req, res) {
     if (req.isAuthenticated()) {
-        return res.redirect('/users/profile/:id');
+        return res.redirect('/users/profile');
     } else {
         return res.render('user_sign_up', {
             title: "Codeial | Sign Up"
